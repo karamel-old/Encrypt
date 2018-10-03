@@ -1,0 +1,19 @@
+{
+  "name": "karamel/encrypt",
+  "description": "encrypt package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amir Kalantar",
+      "email": "amir.kalantar@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Karamel\\Encrypt\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}

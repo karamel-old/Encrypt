@@ -10,7 +10,9 @@ class Encrypt
     {
         $this->key = $key;
         $this->cipher = $cipher;
-        if (!in_array($this->cipher, openssl_get_cipher_methods()))
+        /*  var_dump(strtolower($this->cipher));
+          exit();*/
+        if (!in_array(strtolower($this->cipher), openssl_get_cipher_methods()))
             throw new \Exception("There is wrong cipher method");
     }
 
